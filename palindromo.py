@@ -1,9 +1,9 @@
 # Variables
-frase = "ui"
+frase = "Casa"
 
 print(frase)
 
-
+#función para comprobar que la frase contiene letras, números o ambos
 def alfanumerico(f):
     # va a verificar que frase se compone de letras o números
     for i in f:
@@ -16,5 +16,20 @@ def alfanumerico(f):
         else:
             return("Frase no es válida")
         
-a = alfanumerico(frase)
-print(a)
+print(alfanumerico(frase))
+
+'''from unidecode import unidecode
+unidecode(frase)'''
+ # instalar pip install unidecode 
+ # unidecode, biblioteca que nos transforma los caracteres específicos en unos que no
+    
+#Función para quitar toda parte acentuada
+'''
+def acentuacion(r):
+    unidecode(f)'''
+        
+#Función para transformar toda letra mayúscula en minúscula
+def minuscula(a):
+    k = a.lower()
+    return k
+print(minuscula(frase))
