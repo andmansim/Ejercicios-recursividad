@@ -9,7 +9,7 @@ def alfanumerico(f):
     for i in f:
         if f.isnumeric(): #función para saber si es un número o no, también vale con f.isdigit()
             return("Solo números")
-        elif type(f) == str:
+        elif type(f) == str: #para comprobar que contiene letras
             return("Solo letras")
         elif type(f) == str and f.isnumeric():
             return("tiene letras y números")
