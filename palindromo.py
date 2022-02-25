@@ -1,5 +1,5 @@
 # Variables
-frase = "Casa"
+frase = "cuero"
 
 print(frase)
 
@@ -9,27 +9,32 @@ def alfanumerico(f):
     for i in f:
         if f.isnumeric(): #función para saber si es un número o no, también vale con f.isdigit()
             return("Solo números")
-        elif type(f) == str: #para comprobar que contiene letras
+        elif f.isalpha(): #para comprobar que contiene letras
             return("Solo letras")
-        elif type(f) == str and f.isnumeric():
+        elif f.isalpha() and f.isnumeric():
             return("tiene letras y números")
         else:
             return("Frase no es válida")
         
 print(alfanumerico(frase))
-
-'''from unidecode import unidecode
-unidecode(frase)'''
- # instalar pip install unidecode 
- # unidecode, biblioteca que nos transforma los caracteres específicos en unos que no
-    
+   
 #Función para quitar toda parte acentuada
 '''
 def acentuacion(r):
-    unidecode(f)'''
+   '''
         
 #Función para transformar toda letra mayúscula en minúscula
 def minuscula(a):
     k = a.lower()
     return k
 print(minuscula(frase))
+
+#Función invertir 
+def invertir(b):
+    if len(b) == 0:
+        return b
+    else: 
+        b = invertir(b[1:]) + b[0] # pasa la primera letra al final y se llama otra vez así misma para hacerlo con todas
+        return b
+    
+print(invertir(frase))
