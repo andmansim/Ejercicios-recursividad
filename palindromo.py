@@ -1,20 +1,17 @@
 # Variables
-import string
-from numpy import integer
+frase = "ui"
 
-
-frase = "Oso"
-#frase = list(frase)
 print(frase)
+
 
 def alfanumerico(f):
     # va a verificar que frase se compone de letras o números
     for i in f:
-        if f == integer:
+        if f.isnumeric(): #función para saber si es un número o no, también vale con f.isdigit()
             return("Solo números")
-        elif f == string:
+        elif type(f) == str:
             return("Solo letras")
-        elif f == string and f == integer:
+        elif type(f) == str and f.isnumeric():
             return("tiene letras y números")
         else:
             return("Frase no es válida")
