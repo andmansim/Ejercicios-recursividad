@@ -28,3 +28,7 @@ def leer_fichas(f):
 
 leer_fichas(fichas)
 
+def mover_fichas():
+    for j in l_rojas:
+        if l_rojas[j] in range(0, len(l_rojas)):
+            
