@@ -11,7 +11,7 @@ print(fichas)
 #Función para leer fichas
 def leer_fichas(f):
     for i in range(0, len(fichas)):
-        if fichas[i] == "R":
+        if fichas[i] == "R": # me guarda en una lista las posiciones de dicha fichas
             l_rojas.append(i) 
         
         if fichas[i] == "V":
