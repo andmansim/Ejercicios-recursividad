@@ -10,7 +10,8 @@ El diagrama UML del Palindromo es el siguiente:
 
 
 ![El diagrama UML del Palindromo](/Palindromo.jpg)
-´´´# Variables
+```
+# Variables
 frase = "Hola soy Andreá"
 #frase = "Hooh"
 f=""
@@ -38,7 +39,7 @@ class Palindromo:
         k = f.lower()
         return k
     
-  # quitar toda parte acentuada
+    # quitar toda parte acentuada
     def acentuacion():
         f2 = n.replace("á", "a")
         f2 = f2.replace("é", "a")
@@ -68,7 +69,7 @@ if b == m:
     print("Es un palíndromo")
 else:
     print("No es un palíndromo")
-´´´
+```
 
 
 El diagrama UML de la bandera de Dijkstra es el siguiente:
