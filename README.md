@@ -10,6 +10,8 @@ El diagrama UML del Palindromo es el siguiente:
 
 
 ![El diagrama UML del Palindromo](/Palindromo.jpg)
+´´´
+´´´
 
 
 El diagrama UML de la bandera de Dijkstra es el siguiente:
