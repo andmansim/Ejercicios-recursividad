@@ -49,12 +49,12 @@ for q in range(0, len(fichas)):
             print (fichas)
             l_azul[p] = l_rojas[q]
             
-    elif j <= q < ((k + j) - 1):  #en este hueco van las verdes
+    elif (k + j) > q >= j  :  #en este hueco van las verdes
         if q in l_azul: #si lo tiene las azules, los intercambiamos
             p = l_azul.index(q) #hay una verde donde las azules, las intercambio
             print (p)
-            fichas[l_verdes[q]], fichas[q] = fichas[q], fichas[l_verdes[q]]
+            fichas[l_verdes[q - j]], fichas[q] = fichas[q], fichas[l_verdes[q - j]]
             print (fichas)
-            l_azul[p] = l_verdes[q]
+            l_azul[p] = l_verdes[q - j]
         
 print (fichas)
