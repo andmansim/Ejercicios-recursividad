@@ -4,18 +4,18 @@ persona = []
 def toledo (t, n, c):
       
     if 0 <= n < len(t):
-        if t[n][1].startswith(c):
+        if t[n][1].startswith(c): #Buscamos el inicio de su código postal
             persona.append (t[n][0]) 
-            toledo(t,n+1,c)
+            toledo(t,n+1,c) # Parte recursiva, se llama así misma 
         else:
             toledo(t,n+1,c)
                 
-
+#Segunda parte del ejercicio
 def Madrid (t, n, c,e,f):
           
     if 0 <= n < len(t):
         if t[n][1].startswith(c):
-            if e <= t[n][2] <= f:
+            if e <= t[n][2] <= f: #filtro para encontrar a las personas comprendidas entre estas edades
                 persona.append (t[n][0]) 
                 Madrid(t,n+1,c, e, f)
         else:
