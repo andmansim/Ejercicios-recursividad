@@ -66,8 +66,7 @@ def ordenar_fichas(q):
         q += 1
         ordenar_fichas(q)    
     
-       
-        
+           
 leer_fichas(fichas)
 ordenar_fichas(0)
         
