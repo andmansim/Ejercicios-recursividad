@@ -48,13 +48,10 @@ class Dijkstra:
             
                     fichas[l_rojas[q]], fichas[q] = fichas[q], fichas[l_rojas[q]]
             
-                    l_azul[p] = l_rojas[q]
-                print(fichas)
-        
+                    l_azul[p] = l_rojas[q]        
                 l_verdes.sort()
                 l_azul.sort()    
-                print(l_verdes)
-                print(l_azul)        
+                       
             elif (k + j ) > q >= j   :  #en este hueco van las verdes
         
                 if q in l_azul: #si lo tiene las azules, los intercambiamos
@@ -62,7 +59,7 @@ class Dijkstra:
                     fichas[l_verdes[q - j ]], fichas[q] = fichas[q], fichas[l_verdes[q - j ]]
                     l_azul[p] = l_verdes[q - j ]
         
-            print (fichas)
+        print (fichas)
     
 posicion_fichas = Dijkstra()
 posicion_fichas.leer_fichas()
